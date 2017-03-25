@@ -6,7 +6,7 @@
 //  Copyright © 2017 Ahmad Alhashemi. All rights reserved.
 //
 
-import Foundation
-
-print("Hello, World!")
-
+let scanner = Scanner(source: "@media { background-image: url(\"test.png\"); }")
+for token in scanner.scanTokens() {
+    print(token)
+}
